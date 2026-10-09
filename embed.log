@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11610.29it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+0 5000 1
+320 5000 15
+640 5000 33
+960 5000 57
+1280 5000 83
+1600 5000 109
+1920 5000 136
+2240 5000 165
+2560 5000 195
+2880 5000 234
+3200 5000 274
+3520 5000 318
+3840 5000 369
+4160 5000 421
+4480 5000 474
+4800 5000 528
+EMBED_DONE (5000, 480)
